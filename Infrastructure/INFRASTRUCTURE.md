@@ -12,29 +12,27 @@ No console da AWS vá em VPC > Your VPCs > Create VPC
 ### Criação das Subnets
 No console da AWS vá em VPC > Subnets > Create subnets
 
-#### Subnets publicas
-
 1. Subnet public-az1
 ![Subnet public-az1](Images/VPC/Subnets/public-az1.PNG)
 
 2. Subnet public-az2
 ![Subnet public-az2](Images/VPC/Subnets/public-az2.PNG)
 
-#### Subnets para os dados
-
-1. Subnet data-az1
+3. Subnet data-az1
 ![Subnet data-az1](Images/VPC/Subnets/data-az1.PNG)
 
-2. Subnet data-az2
+4. Subnet data-az2
 ![Subnet data-az2](Images/VPC/Subnets/data-az2.PNG)
 
-#### Subnets para as intâncias
+> Subnets para os dados
 
-1. Subnet app-az1
+5. Subnet app-az1
 ![Subnet app-az1](Images/VPC/Subnets/app-az1.PNG)
 
-2. Subnet app-az2
+6. Subnet app-az2
 ![Subnet app-az2](Images/VPC/Subnets/app-az2.PNG)
+
+> Subnets para as intâncias
 
 ### Criação das Route Tables
 1. Criar route table privada
