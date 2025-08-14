@@ -15,7 +15,7 @@ No console da AWS vá em VPC > Subnets > Create subnets
 #### Subnets publicas
 
 1. Subnet public-az1
-![Subnet public-az1](Infrastructure\Images\VPC\Subnets\public-az1.PNG)
+![Subnet public-az1](.\Images\VPC\Subnets\public-az1.PNG)
 
 2. Subnet public-az2
 ![Subnet public-az2](Infrastructure\Images\VPC\Subnets\public-az2.PNG)
