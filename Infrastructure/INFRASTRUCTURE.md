@@ -7,7 +7,7 @@ Alguns serviços utilizados dependem da criação prévia de security groups com
 
 ### Criação da VPC
 No console da AWS vá em VPC > Your VPCs > Create VPC
-![VPC SETTINGS](Infrastructure\Images\VPC\vpc-settings.PNG)
+![VPC SETTINGS](Images\VPC\vpc-settings.PNG)
 
 ### Criação das Subnets
 No console da AWS vá em VPC > Subnets > Create subnets
