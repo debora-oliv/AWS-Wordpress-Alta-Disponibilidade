@@ -3,7 +3,7 @@
 ![Bash Script](https://img.shields.io/badge/bash_script-%23117AC9.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 
-![Infrastructure](Infrastructure/images/infrastructure.PNG)
+![Infrastructure](Infrastructure/Images/infrastructure.PNG)
 
 O objetivo do projeto foi implantar a plataforma Wordpress na nuvem AWS de forma escalável e tolerante a falhas, utilizando os principais serviços gerenciados da AWS para garantir desempenho e disponibilidade. Para isso a aplicação foi distribuída em múltiplas instâncias EC2 por meio de um ASG (Auto Scaling Group), com balanceamento de carga fornecido por um ALB (Application Load Balancer). O armazenamento de arquivos foi centralizado e compartilhado por meio de um EFS (Elastic File System), enquanto os dados da aplicação foram armazenados em um banco relacional altamente disponível com o Amazon RDS.
 
