@@ -143,6 +143,13 @@ Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VP
 
 # Launch Template
 
+# Target Groups
+
+![Target Group basic_configuration1](Images/TargetGroup/basic_configuration1.PNG)
+![Target Group basic_configuration2](Images/TargetGroup/basic_configuration2.PNG)
+
+![Target Group health_check](Images/TargetGroup/health_check.PNG)
+
 # Aplication Load Balancer (ALB)
 
 ![Aplication Load Balancer ](Images/AplicationLoadBalancer/basic_configuration.PNG)
