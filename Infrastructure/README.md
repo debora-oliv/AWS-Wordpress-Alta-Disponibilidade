@@ -14,6 +14,8 @@
 - [Elastic File System (EFS)](#elastic-file-system-efs)
 - [Relational Database Service (RDS)](#relational-database-service-rds)
 - [Elastic Compute Cloud (EC2)](#elastic-compute-cloud-ec2)
+- [Target Groups](#target-groups)
+- [Launch Template](#launch-template)
 - [Aplication Load Balancer (ALB)](#aplication-load-balancer-alb)
 - [Auto Scalling Group (ASG)](#auto-scalling-group-asg)
 
@@ -107,7 +109,7 @@ Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VP
 
 ![Sucess](Images/ElasticFileSystem/sucess.PNG)
 
-Vá em View file system > procure por DNS Name > clique para copiar e guarde o conteúdo em um local seguro, ele será importante para montar o EFS dentro das intâncias EC2 via userdata
+> Vá em View file system > procure por DNS Name > clique para copiar e guarde o conteúdo em um local seguro, ele será importante para montar o EFS dentro das intâncias EC2 via userdata
 
 # Relational Database Service (RDS)
 
@@ -124,17 +126,31 @@ Vá em View file system > procure por DNS Name > clique para copiar e guarde o c
 ![RDS instance_configuration](Images/RelationalDatabaseService/instance_configuration.PNG)
 
 ![RDS connectivity1](Images/RelationalDatabaseService/connectivity1.PNG)
-
 ![RDS connectivity2](Images/RelationalDatabaseService/connectivity2.PNG)
 
 ![RDS addtional_configuration](Images/RelationalDatabaseService/addtional_configuration.PNG)
 
 ![RDS sucess](Images/RelationalDatabaseService/sucess.PNG)
 
-Vá em View connection details > procure por Endpoint > clique para copiar e guarde o conteúdo em um local seguro, ele será importante para conectar o RDS com as intâncias EC2 via userdata
+> Vá em View connection details > procure por Endpoint > clique para copiar e guarde o conteúdo em um local seguro, ele será importante para conectar o RDS com as intâncias EC2 via userdata
 
-# Elastic Compute Cloud (EC2)
+# Target Groups
+
+![Target Group basic_configuration1](Images/TargetGroup/basic_configuration1.PNG)
+![Target Group basic_configuration2](Images/TargetGroup/basic_configuration2.PNG)
+
+![Target Group health_check](Images/TargetGroup/health_check.PNG)
+
+# Launch Template
 
 # Aplication Load Balancer (ALB)
+
+![Aplication Load Balancer ](Images/AplicationLoadBalancer/basic_configuration.PNG)
+
+![Aplication Load Balancer ](Images/AplicationLoadBalancer/network_mapping.PNG)
+
+![Aplication Load Balancer ](Images/AplicationLoadBalancer/sg.PNG)
+
+![Aplication Load Balancer ](Images/AplicationLoadBalancer/listeners.PNG)
 
 # Auto Scalling Group (ASG)
