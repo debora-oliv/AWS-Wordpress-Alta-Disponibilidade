@@ -1,18 +1,40 @@
-> Alguns serviços utilizados dependem da criação prévia de security groups com regras de entra e saída corretamente estipuladas. Para acessar o passo da criação desses recursos clique aqui.
+# Serviços Criados e Configurados
 
-- [Criação da Virtual Private Cloud](#criação-da-virtual-private-cloud)
-- [Criação das Subnets](#criação-das-subnets)
-- [Criação das Route Tables](#criação-das-route-tables)
-- [Criação do Internet Gateway](#criação-do-internet-gateway)
+- [Security Groups](security-groups)
+  - [Aplication Load Balancer (ALB)](#alb-security-group)
+  - [Relational Database Service (RDS)](#rds-security-group)
+  - [Elastic File System (EFS)](#efs-security-group)
+  - [Elastic Compute Cloud (EC2)](#ec2-security-group)
+  - [Bastion Host](#bastion-security-group)
+- [Virtual Private Cloud (VPC)](#virtual-private-cloud-vpc)
+  - [Subnets](#subnets)
+  - [Route Tables](#route-tables)
+  - [Internet Gateway](#internet-gateway)
+- [Elastic File System (EFS)](#efs)
+- [Relational Database Service (RDS)](#rds)
+- [Elastic Compute Cloud (EC2)](#ec2)
+- [Aplication Load Balancer (ALB)](#alb)
+- [Auto Scalling Group (ASG)](#asg)
 
-# Criação da Virtual Private Cloud
-No console da AWS vá em VPC > Your VPCs > Create VPC
+# Security Groups
+
+> Esta feature pode ser acessada tanto pelo dashboard da VPC quanto pelo dashboard da EC2
+
+### ALB Security Group
+
+### RDS Security Group
+
+### EFS Security Group
+
+### EC2 Security Group
+
+### Bastion Security Group
+
+# Virtual Private Cloud (VPC)
 
 ![VPC SETTINGS](Images/VPC/vpc-settings.PNG)
 
-# Criação das Subnets
-No console da AWS vá em VPC > Subnets > Create subnet
-
+### Subnets
 1. #### Subnet public-az1
 ![Subnet public-az1](Images/Subnets/public-az1.PNG)
 
@@ -31,13 +53,12 @@ No console da AWS vá em VPC > Subnets > Create subnet
 6. #### Subnet app-az2
 ![Subnet app-az2](Images/Subnets/app-az2.PNG)
 
-# Criação das Route Tables
-No console da AWS vá em VPC > Route tables > Create route table
+### Route Tables
 
 1. #### Route table privada
 ![Private route table settings](Images/RouteTables/private-rt-settings.PNG)
 
->Logo após finalizar a criação da tabela, clique em Actions > Edit subnet associations e selecione todas as subnets públicas
+>Logo após finalizar a criação da tabela, clique em Actions > Edit subnet associations e selecione todas as subnets privadas
 >
 >![Private route table associations](Images/RouteTables/private-rt-associations.PNG)
 
@@ -48,8 +69,7 @@ No console da AWS vá em VPC > Route tables > Create route table
 >
 >![Private route table associations](Images/RouteTables/public-rt-associations.PNG)
 
-# Criação do Internet Gateway
-No console da AWS vá em VPC > Internet gateways > Create internet gateway
+### Internet Gateway
 
 ![Subnet app-az2](Images/InternetGateway/ig-settings.PNG)
 
