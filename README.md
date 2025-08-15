@@ -12,7 +12,7 @@ O objetivo do projeto foi implantar a plataforma Wordpress na nuvem AWS de forma
 
 # Infraestrutura
 
-O objetivo desta sessão é apresentar um resumo básico dos recursos/serviços utilizados e o papel que cada um deles desempenha no funcionamento da aplicação, para conferir o passo a passo da implementação e as configurações do ambiente [clique aqui](Infrastructure/INFRASTRUCTURE.md).
+O objetivo desta sessão é apresentar um resumo básico dos recursos/serviços utilizados e o papel que cada um deles desempenha no funcionamento da aplicação, para conferir o passo a passo da implementação e as configurações do ambiente [clique aqui](Infrastructure/README.md).
 
 ### VPC (Virtual Private Cloud)
 Ao invés de concentrar todos os recursos em uma única AZ (Availability Zone), a VPC foi distribuida entre duas AZs diferentes. O principal objetivo disso é disponibilidade e resiliência, se uma AZ cair, outra continua operando. A VPC multi-az foi criada com 6 subnets (2 públicas e 4 privadas), Route Tables, NAT Gateway e Internet Gateway.
