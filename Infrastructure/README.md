@@ -10,11 +10,12 @@
   - [Subnets](#subnets)
   - [Route Tables](#route-tables)
   - [Internet Gateway](#internet-gateway)
-- [Elastic File System (EFS)](#efs)
-- [Relational Database Service (RDS)](#rds)
-- [Elastic Compute Cloud (EC2)](#ec2)
-- [Aplication Load Balancer (ALB)](#alb)
-- [Auto Scalling Group (ASG)](#asg)
+  - [NAT Gateway](#nat-gateway)
+- [Elastic File System (EFS)](#elastic-file-system-efs)
+- [Relational Database Service (RDS)](#relational-database-service-rds)
+- [Elastic Compute Cloud (EC2)](#elastic-compute-cloud-ec2)
+- [Aplication Load Balancer (ALB)](#aplication-load-balancer-alb)
+- [Auto Scalling Group (ASG)](#auto-scalling-group-asg)
 
 # Security Groups
 
@@ -22,57 +23,118 @@
 
 ### ALB Security Group
 
+![basic-datails](Images/SecurityGroups/ALB/basic-datails.PNG)
+![basic-datails](Images/SecurityGroups/ALB/inbound.PNG)
+![basic-datails](Images/SecurityGroups/ALB/outbound.PNG)
+
 ### RDS Security Group
+
+![basic-datails](Images/SecurityGroups/RDS/basic-datails.PNG)
+![basic-datails](Images/SecurityGroups/RDS/inbound.PNG)
+![basic-datails](Images/SecurityGroups/RDS/outbound.PNG)
 
 ### EFS Security Group
 
+![basic-datails](Images/SecurityGroups/EFS/basic-datails.PNG)
+![basic-datails](Images/SecurityGroups/EFS/inbound.PNG)
+![basic-datails](Images/SecurityGroups/EFS/outbound.PNG)
+
 ### EC2 Security Group
+
+![basic-datails](Images/SecurityGroups/EC2/basic-datails.PNG)
+![basic-datails](Images/SecurityGroups/EC2/inbound.PNG)
+![basic-datails](Images/SecurityGroups/EC2/outbound.PNG)
 
 ### Bastion Security Group
 
+![basic-datails](Images/SecurityGroups/Bastion/basic-datails.PNG)
+![basic-datails](Images/SecurityGroups/Bastion/inbound.PNG)
+![basic-datails](Images/SecurityGroups/Bastion/outbound.PNG)
+
 # Virtual Private Cloud (VPC)
 
-![VPC SETTINGS](Images/VirtualPrivateCloud/vpc-settings.PNG)
+![VPC settings](Images/VirtualPrivateCloud/vpc-settings.PNG)
 
 ### Subnets
-1. #### Subnet public-az1
+
 ![Subnet public-az1](Images/Subnets/public-az1.PNG)
 
-2. #### Subnet public-az2
 ![Subnet public-az2](Images/Subnets/public-az2.PNG)
 
-3. #### Subnet data-az1
 ![Subnet data-az1](Images/Subnets/data-az1.PNG)
 
-4. #### Subnet data-az2
 ![Subnet data-az2](Images/Subnets/data-az2.PNG)
 
-5. #### Subnet app-az1
 ![Subnet app-az1](Images/Subnets/app-az1.PNG)
 
-6. #### Subnet app-az2
 ![Subnet app-az2](Images/Subnets/app-az2.PNG)
 
 ### Route Tables
 
-1. #### Route table privada
+1. #### Criar Route tables
 ![Private route table settings](Images/RouteTables/private-rt-settings.PNG)
 
->Logo após finalizar a criação da tabela, clique em Actions > Edit subnet associations e selecione todas as subnets privadas
->
->![Private route table associations](Images/RouteTables/private-rt-associations.PNG)
-
-2. #### Route table pública
 ![Public route table settings](Images/RouteTables/public-rt-settings.PNG)
 
->Logo após finalizar a criação da tabela, clique em Actions > Edit subnet associations e selecione todas as subnets privadas
->
->![Private route table associations](Images/RouteTables/public-rt-associations.PNG)
+2. #### Associar Route tables
+Selecione a route table privada, clique em Actions > Edit subnet associations e selecione todas as subnets privadas
+
+![Private route table associations](Images/RouteTables/private-rt-associations.PNG)
+
+Selecione a route table pública, clique em Actions > Edit subnet associations e selecione todas as subnets públicas
+
+![Private route table associations](Images/RouteTables/public-rt-associations.PNG)
 
 ### Internet Gateway
 
-![Subnet app-az2](Images/InternetGateway/ig-settings.PNG)
+1. #### Criar Internet Gateway
+![Criar Internet Gateway](Images/InternetGateway/ig-settings.PNG)
 
->Logo após finalizar a criação, clique em Actions > Attach to VPC e selecione a VPC
->
->![Private route table associations](Images/InternetGateway/attach-to-vpc.PNG)
+2. #### Anexar Internet Gateway
+Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VPC
+
+![Anexar Internet Gateway](Images/InternetGateway/attach-to-vpc.PNG)
+
+### NAT Gateway
+
+# Elastic File System (EFS)
+
+![EFS general](Images/ElasticFileSystem/general.PNG)
+
+![EFS performance](Images/ElasticFileSystem/performance.PNG)
+
+![EFS general](Images/ElasticFileSystem/network.PNG)
+
+![Sucess](Images/ElasticFileSystem/sucess.PNG)
+
+Vá em View file system > procure por DNS Name > clique para copiar e guarde o conteúdo em um local seguro, ele será importante para montar o EFS dentro das intâncias EC2 via userdata
+
+# Relational Database Service (RDS)
+
+![RDS create_method](Images/RelationalDatabaseService/create_method.PNG)
+
+![RDS engine_type](Images/RelationalDatabaseService/engine_type.PNG)
+
+![RDS templates](Images/RelationalDatabaseService/templates.PNG)
+
+![RDS settings](Images/RelationalDatabaseService/settings.PNG)
+
+> Guarde as informações de **DB cluster identifier**, **Master username** e **Master password** em um local seguro, elas serão importantes para conectar o RDS com as intâncias EC2 via userdata
+
+![RDS instance_configuration](Images/RelationalDatabaseService/instance_configuration.PNG)
+
+![RDS connectivity1](Images/RelationalDatabaseService/connectivity1.PNG)
+
+![RDS connectivity2](Images/RelationalDatabaseService/connectivity2.PNG)
+
+![RDS addtional_configuration](Images/RelationalDatabaseService/addtional_configuration.PNG)
+
+![RDS sucess](Images/RelationalDatabaseService/sucess.PNG)
+
+Vá em View connection details > procure por Endpoint > clique para copiar e guarde o conteúdo em um local seguro, ele será importante para conectar o RDS com as intâncias EC2 via userdata
+
+# Elastic Compute Cloud (EC2)
+
+# Aplication Load Balancer (ALB)
+
+# Auto Scalling Group (ASG)
