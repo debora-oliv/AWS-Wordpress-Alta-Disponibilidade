@@ -32,7 +32,7 @@
 
 # Virtual Private Cloud (VPC)
 
-![VPC SETTINGS](Images/VPC/vpc-settings.PNG)
+![VPC SETTINGS](Images/VirtualPrivateCloud/vpc-settings.PNG)
 
 ### Subnets
 1. #### Subnet public-az1
