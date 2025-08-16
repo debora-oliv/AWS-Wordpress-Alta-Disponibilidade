@@ -80,6 +80,12 @@ Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VP
 
 ![Anexar Internet Gateway](Images/InternetGateway/attach-to-vpc.PNG)
 
+### NAT Gateway
+
+![NAT Gateway](Images/NATGateway/settings_nat_az1.PNG)
+
+![NAT Gateway](Images/NATGateway/settings_nat_az2.PNG)
+
 ### Route Tables
 
 1. #### Criar Route tables
@@ -161,12 +167,28 @@ Selecione a route table pública, clique em Actions > Edit subnet associations e
 
 # Aplication Load Balancer (ALB)
 
-![Aplication Load Balancer ](Images/AplicationLoadBalancer/basic_configuration.PNG)
+![Aplication Load Balancer basic_configuration](Images/AplicationLoadBalancer/basic_configuration.PNG)
 
-![Aplication Load Balancer ](Images/AplicationLoadBalancer/network_mapping.PNG)
+![Aplication Load Balancer network_mapping](Images/AplicationLoadBalancer/network_mapping.PNG)
 
-![Aplication Load Balancer ](Images/AplicationLoadBalancer/sg.PNG)
+![Aplication Load Balancer sg](Images/AplicationLoadBalancer/sg.PNG)
 
-![Aplication Load Balancer ](Images/AplicationLoadBalancer/listeners.PNG)
+![Aplication Load Balancer listeners](Images/AplicationLoadBalancer/listeners.PNG)
 
 # Auto Scalling Group (ASG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/name.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/launch-template.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/network.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/load-balancing.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/vpc-lattice-integration-options.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/health-check.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/scaling.PNG)
+
+![Auto Scalling Group ](Images/AutoScalingGroup/scaling-policies.PNG)
