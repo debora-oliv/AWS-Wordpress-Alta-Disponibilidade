@@ -8,12 +8,11 @@
   - [Bastion Host](#bastion-security-group)
 - [Virtual Private Cloud (VPC)](#virtual-private-cloud-vpc)
   - [Subnets](#subnets)
-  - [Route Tables](#route-tables)
   - [Internet Gateway](#internet-gateway)
   - [NAT Gateway](#nat-gateway)
+  - [Route Tables](#route-tables)
 - [Elastic File System (EFS)](#elastic-file-system-efs)
 - [Relational Database Service (RDS)](#relational-database-service-rds)
-- [Elastic Compute Cloud (EC2)](#elastic-compute-cloud-ec2)
 - [Target Groups](#target-groups)
 - [Launch Template](#launch-template)
 - [Aplication Load Balancer (ALB)](#aplication-load-balancer-alb)
@@ -71,6 +70,16 @@
 
 ![Subnet app-az2](Images/Subnets/app-az2.PNG)
 
+### Internet Gateway
+
+1. #### Criar Internet Gateway
+![Criar Internet Gateway](Images/InternetGateway/ig-settings.PNG)
+
+2. #### Anexar Internet Gateway
+Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VPC
+
+![Anexar Internet Gateway](Images/InternetGateway/attach-to-vpc.PNG)
+
 ### Route Tables
 
 1. #### Criar Route tables
@@ -87,17 +96,6 @@ Selecione a route table pública, clique em Actions > Edit subnet associations e
 
 ![Private route table associations](Images/RouteTables/public-rt-associations.PNG)
 
-### Internet Gateway
-
-1. #### Criar Internet Gateway
-![Criar Internet Gateway](Images/InternetGateway/ig-settings.PNG)
-
-2. #### Anexar Internet Gateway
-Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VPC
-
-![Anexar Internet Gateway](Images/InternetGateway/attach-to-vpc.PNG)
-
-### NAT Gateway
 
 # Elastic File System (EFS)
 
@@ -143,12 +141,23 @@ Selecione o internet gateway, clique em Actions > Attach to VPC e selecione a VP
 
 # Launch Template
 
-# Target Groups
+> Antes de prosseguir, faça download do script [userdata](Infrastructure/Scripts/userdata.sh)
 
-![Target Group basic_configuration1](Images/TargetGroup/basic_configuration1.PNG)
-![Target Group basic_configuration2](Images/TargetGroup/basic_configuration2.PNG)
+![Launch Template name_and_description](Images/LaunchTemplate/name_and_description.PNG)
 
-![Target Group health_check](Images/TargetGroup/health_check.PNG)
+![Launch Template ami](Images/LaunchTemplate/ami.PNG)
+
+![Launch Template instance_type](Images/LaunchTemplate/instance_type.PNG)
+
+![Launch Template key_pair](Images/LaunchTemplate/key_pair.PNG)
+
+![Launch Template network_settings](Images/LaunchTemplate/network_settings.PNG)
+
+![Launch Template network_settings](Images/LaunchTemplate/advanced_network_settings.PNG)
+
+![Launch Template network_settings](Images/LaunchTemplate/user_data.PNG)
+
+> O campo User data está localizado em Advanced details, encontre e selecione o arquivo que você fez o download anteriormente
 
 # Aplication Load Balancer (ALB)
 
