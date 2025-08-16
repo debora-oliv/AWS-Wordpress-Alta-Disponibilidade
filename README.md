@@ -7,10 +7,7 @@
 
 O objetivo do projeto foi implantar a plataforma Wordpress na nuvem AWS de forma escalável e tolerante a falhas, utilizando os principais serviços gerenciados da AWS para garantir desempenho e disponibilidade. Para isso a aplicação foi distribuída em múltiplas instâncias EC2 por meio de um ASG (Auto Scaling Group), com balanceamento de carga fornecido por um ALB (Application Load Balancer). O armazenamento de arquivos foi centralizado e compartilhado por meio de um EFS (Elastic File System), enquanto os dados da aplicação foram armazenados em um banco relacional altamente disponível com o Amazon RDS.
 
-# Índice
-- [Infraestrutura](#infraestrutura)
-
-# Infraestrutura
+# Serviços e Tecnologias
 
 O objetivo desta sessão é apresentar um resumo básico dos recursos/serviços utilizados e o papel que cada um deles desempenha no funcionamento da aplicação, para conferir o passo a passo da implementação e as configurações do ambiente [clique aqui](Infrastructure/README.md).
 
@@ -35,7 +32,12 @@ Banco de dados relacional gerenciado pela própria AWS. Foi criado em uma das su
 ### EFS (Elastic File System)
 Proporciona armazenamento compartilhado e escalável para múltiplas instâncias. Foi configurado com dois Mount Targets, cada um em uma az, e com o EFS Infrequent Access para otimizar os custos. A montagem ocorre dentro das instâncias EC2 via NFS.
 
+# Produto Final
 
+![Final Infrastructure](Infrastructure/Images/final_infrastructure.PNG) 
 
+# Melhorias Futuras
 
-
+- Infrastructure as Code com Terraform ou CloudFormation
+- Variáveis de ambientes e dados sensíveis gerencias pelo Secrets Manager
+- Integração com o discord para monitorar o status da página
