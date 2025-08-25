@@ -13,7 +13,7 @@ RDS_USER="seu_usuario"
 RDS_PASS="sua_senha"
 RDS_ENDPOINT="wordpress.xxxxxxxx.us-east-2.rds.amazonaws.com"
 EFS_DNS="fs-xxxxxxxxxxx.efs.us-east-2.amazonaws.com"
-DISCORD_WEBHOOK="https://discord.com/api/webhooks/1406032841870934098/_cicpkMdpNWweRPj7kXBcnfiZxpUVBYzRIvc_fNSSDqGTTBlN3vgaSppXmdg2gLnU2WE"
+DISCORD_WEBHOOK="URL_WEBHOOK"
 EOF
 
 chmod 600 /etc/wordpress-secrets.env
