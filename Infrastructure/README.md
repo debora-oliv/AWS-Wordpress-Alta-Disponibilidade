@@ -147,7 +147,7 @@ Selecione a route table pública, clique em Actions > Edit subnet associations e
 
 # Launch Template
 
-> Antes de prosseguir, faça download do script [userdata](Infrastructure/Scripts/userdata.sh)
+> Antes de prosseguir, faça download do script [userdata](Scripts/userdata.sh)
 
 ![Launch Template name_and_description](Images/LaunchTemplate/name_and_description.PNG)
 
